@@ -3,7 +3,7 @@
 // ============================================================
 
 // Tanggal & jam ulang tahun (+07:00 = WIB)
-export const BIRTHDAY_DATE = "2026-08-31T00:00:00+07:00";
+export const BIRTHDAY_DATE = "2026-10-04T00:00:00+07:00";
 export const PARTNER_NAME = "Sayang";
 
 // Lagu: taruh file di public/music/birthday-song.mp3
