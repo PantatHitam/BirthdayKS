@@ -16,9 +16,16 @@ export default function LoveLetter() {
       <div className="lglow" />
       {stage === 0 && (
         <div className="lin fadein">
-          <div className="mail">💌</div>
+          <div className="letter-invite" aria-hidden="true">
+            <span className="letter-orbit orbit-one">✦</span>
+            <span className="letter-orbit orbit-two">✧</span>
+            <span className="letter-orbit orbit-three">♥</span>
+            <div className="mail">💌</div>
+            <span className="letter-seal">💖</span>
+          </div>
           <p className="intro">{LETTER_INTRO}</p>
-          <button className="cta" onClick={openIt}>Buka surat</button>
+          <p className="letter-whisper">Ada pesan yang kusimpan khusus untukmu</p>
+          <button className="cta letter-cta" onClick={openIt}>💌 Buka pesan spesial 💌</button>
         </div>
       )}
       {stage >= 1 && stage < 4 && (
@@ -27,7 +34,7 @@ export default function LoveLetter() {
         </div>
       )}
       {stage >= 4 && (
-        <article className="read fadein">
+        <article className="read fadein letter-reveal">
           {LETTER.map((t, i) => <p key={i} className="lp" style={{ "--i": i }}>{t}</p>)}
           <p className="lp sign" style={{ "--i": LETTER.length }}>{LETTER_SIGN}</p>
         </article>

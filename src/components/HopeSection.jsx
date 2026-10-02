@@ -15,6 +15,7 @@ export default function HopeSection() {
           <li key={i} className={open.has(i) ? "open" : ""}>
             <button className="hbtn" onClick={() => toggle(i)} aria-expanded={open.has(i)}>
               <span className="dot" />{h.title}
+              <span className="hope-star" aria-hidden="true">✦</span>
             </button>
             <div className="fold"><div><p>{h.text}</p></div></div>
           </li>

@@ -3,6 +3,7 @@ import { BIRTHDAY_DATE } from "./config";
 import Countdown from "./components/Countdown";
 import BirthdayHero, { Greeting } from "./components/BirthdayHero";
 import PhotoStory from "./components/PhotoStory";
+import MemoryVideo from "./components/MemoryVideo";
 import GratitudeSection from "./components/GratitudeSection";
 import HopeSection from "./components/HopeSection";
 import LoveLetter, { Closing } from "./components/LoveLetter";
@@ -41,6 +42,7 @@ export default function App() {
         <>
           <Greeting />
           <PhotoStory />
+          <MemoryVideo />
           <GratitudeSection />
           <HopeSection />
           <LoveLetter />
